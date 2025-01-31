@@ -22,13 +22,13 @@ export default function About() {
     <section className="relative h-[80vh] flex items-center justify-center text-white">
       {/* Hero Image Background */}
       <div
-        className="absolute inset-0 bg-[url('/images/hero-about.jpg')] bg-cover bg-center opacity-80"
+        className="absolute inset-0 bg-[url('/images/hero-about.png')] bg-cover bg-center opacity-80"
         data-aos="fade-in" // AOS animation for fade-in effect
       ></div>
 
       {/* Dark Overlay */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-50"
+        className="absolute inset-0 bg-black bg-opacity-85"
         data-aos="fade-in" // AOS animation for fade-in effect
       ></div>
 
@@ -43,13 +43,15 @@ export default function About() {
         <p
           className="mt-4 max-w-2xl mx-auto"
           data-aos="fade-up" // AOS animation for fade-up effect
-          data-aos-delay="200" 
+          data-aos-delay="200"
         >
           We specialize in Production, Distribution, and Promotion, utilizing
           advanced communication tools to achieve brand positioning,
           interaction, and influence.
         </p>
       </div>
+      
     </section>
   );
 }
+

@@ -3,14 +3,12 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "emailjs-com";
-// import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Initialize AOS
 AOS.init();
 
-// Define Zod validation schema
 const ContactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
@@ -28,13 +26,20 @@ export default function ContactForm() {
     reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(ContactSchema),
+   mode: "onBlur",
+   defaultValues: {
+    email: "",
+    message: "",
+    name: "",
+    phone: "",
+   },
   });
 
   const sendEmail = async (data: ContactFormData) => {
     try {
       await emailjs.send("service_xxx", "template_xxx", data, "user_xxx");
       alert("Email sent successfully!");
-      reset(); // Clear form after submission
+      reset(); 
     } catch (err) {
       console.error(err);
       alert("Failed to send email. Please try again.");
@@ -107,7 +112,7 @@ export default function ContactForm() {
             <textarea
               {...register("message")}
               placeholder="Message"
-              className="w-full p-3 border rounded h-32"
+              className="w-full p-3 border rounded h-32 outline-none"
             />
             {errors.message && (
               <p className="text-red-500">{errors.message.message}</p>
