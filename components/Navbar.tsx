@@ -6,8 +6,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md p-4">
-      <div className="flex justify-between items-center">
+    // <nav className="fixed top-0 w-full bg-white shadow-md p-4">
+    <nav className="fixed top-0 left-0 w-full bg-white z-10 shadow-md p-6">
+      <div className="flex justify-between items-center md:px-28">
         <h1 className="text-xl font-bold">3rafique Communication</h1>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           ☰

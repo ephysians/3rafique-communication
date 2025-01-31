@@ -1,18 +1,17 @@
 import type { Config } from "tailwindcss";
 
-export default {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+const config: Config = {
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#87CEEB", // Sky Blue Theme
+        secondary: "#D3D3D3", // Light Gray Theme
+        dark: "#1a1a1a",
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;

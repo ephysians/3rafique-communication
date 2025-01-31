@@ -9,14 +9,11 @@ export default function About() {
     AOS.init({
       duration: 1000, // Animation duration (optional)
       easing: "ease-in-out", // Animation easing (optional)
-      once: false, // Ensure animations run each time you scroll to this component
+      once: false,
     });
-
-    // Refresh AOS on every render to trigger animations on re-entry
     AOS.refresh();
 
     return () => {
-      // Cleanup AOS instance when the component unmounts to avoid memory leaks
       AOS.refreshHard();
     };
   }, []);
@@ -46,7 +43,7 @@ export default function About() {
         <p
           className="mt-4 max-w-2xl mx-auto"
           data-aos="fade-up" // AOS animation for fade-up effect
-          data-aos-delay="200" // Delay the animation slightly
+          data-aos-delay="200" 
         >
           We specialize in Production, Distribution, and Promotion, utilizing
           advanced communication tools to achieve brand positioning,
