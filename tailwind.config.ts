@@ -5,10 +5,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#87CEEB", // Sky Blue Theme
-        secondary: "#D3D3D3", // Light Gray Theme
+        primary: "#87CEEB",
+        secondary: "#D3D3D3", 
         dark: "#1a1a1a",
         gap: "#8a817c",
+        gap1: "#a39b8b",
       },
     },
   },
