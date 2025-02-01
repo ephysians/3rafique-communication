@@ -22,7 +22,7 @@ export default function Navbar() {
             isOpen ? "block" : "hidden"
           } md:block space-x-6`}
         >
-          {["home", "about", "services", "affiliates", "contact"].map(
+          {["home", "who are we?", "what we are doing?", "affiliates", "contact"].map(
             (page) => (
               <li key={page}>
                 <Link
