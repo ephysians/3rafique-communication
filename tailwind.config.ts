@@ -8,6 +8,7 @@ const config: Config = {
         primary: "#87CEEB", // Sky Blue Theme
         secondary: "#D3D3D3", // Light Gray Theme
         dark: "#1a1a1a",
+        gap: "#8a817c",
       },
     },
   },
