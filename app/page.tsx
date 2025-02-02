@@ -29,18 +29,21 @@ export default function Home() {
         className="relative flex flex-col px-10 md:flex-row border items-center justify-center h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('/images/hero-home.png')" }}
       >
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-black opacity-85"></div>
 
         <div className="relative md:w-1/2 flex flex-col justify-center items-start p-8 text-white space-y-6">
           <div className="w-full mt-10 ">
-            <h1 className="text-6xl font-semibold" data-aos="fade-up">
+            <h1 className="text-6xl mt-16 font-semibold" data-aos="fade-up">
               Elevating Brands with Strategic Marketing & Corporate Promotions
             </h1>
             <p className="text-lg py-16 " data-aos="fade-left">
               We specialize in Public Relations, Advertising, Media Relations,
               Logo Creation, Concept Generation, and IT Services. We also supply
               plaques and awards, along with corporate branding and promotional
-              items.
+              items. We specialize in Public Relations, Advertising, Media
+              Relations, Logo Creation, Concept Generation, and IT Services. We
+              also supply plaques and awards, along with corporate branding and
+              promotional items.
             </p>
             <button
               onClick={() => router.push("/about")}
@@ -104,7 +107,7 @@ export default function Home() {
         </div>
 
         <div className="relative md:w-1/2 flex flex-col justify-center items-start p-8 text-white space-y-10">
-          <div className="w-full mt-12 mb-8">
+          <div className="w-full mt-24 mb-28">
             <Image
               src="/images/hero-home.png"
               alt="Hero Image"
@@ -125,14 +128,14 @@ export default function Home() {
               CONTACT
             </p>
 
-            <div className="w-2 h-[1px] bg-white" data-aos="fade-right"></div>
+            <div data-aos="fade-right">|</div>
             <p
               className="text-[11px] text-white tracking-wide hover:text-blue-700"
               data-aos="fade-right"
             >
               +234-0903 810 4041
             </p>
-            <div className="w-2 h-[1px] bg-white" data-aos="fade-right" />
+            <div data-aos="fade-right">|</div>
             <p
               className="text-[11px] text-white tracking-wide hover:text-blue-700"
               data-aos="fade-right"
@@ -144,7 +147,7 @@ export default function Home() {
       </section>
 
       <section className="relative flex flex-col md:flex-row items-start h-screen">
-        <div className="relative md:w-1/3 flex items-center justify-center h-screen p-8 text-white">
+        <div className="relative md:w-1/3 md:mb-2 flex items-center justify-center h-screen p-8 text-white">
           {/* Background Image & Overlay */}
           <div className="absolute inset-0 h-screen bg-orange-400 opacity-90"></div>
           <div
@@ -176,14 +179,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative md:w-2/3 flex flex-col h-full items-start justify-center pr-8 px-8">
+        <div className="relative md:w-2/3 md:mb-2 flex flex-col h-full items-start justify-center pr-8 px-8">
           <p
             className="text-[20px] relative bottom-28 left-10 mb-4 font-normal border-b-4 border-orange-400 "
             data-aos="fade-up"
           >
             Welcome to
           </p>
-          <div className=" relative bottom-28 md:ml-28 md:max-w-[35rem] ">
+          <div className=" relative bottom-28 md:ml-28 md:max-w-[39rem] ">
             <h1 className="mb-6 text-3xl font-semibold text-orange-400">
               3rafique Communication
             </h1>
@@ -195,8 +198,8 @@ export default function Home() {
               sapiente dolor atque. Quibusdam possimus eligendi cumque excepturi
               veritatis, nihil laborum numquam.
             </p>
+            <div className="mt-3 mb-2 w-full h-[1px] bg-gray-50" />
           </div>
-          <div className="mt-6 mb-6 w-full h-[1px] bg-gray-50" />
         </div>
       </section>
     </>
