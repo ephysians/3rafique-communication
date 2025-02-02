@@ -220,7 +220,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
         <div className="relative md:w-1/2 flex flex-col justify-center items-start p-8 text-white space-y-6">
-          <div className="w-full mt-10">
+          <div className="w-full mt-10 ">
             <h1 className="text-6xl font-semibold" data-aos="fade-up">
               Elevating Brands with Strategic Marketing & Corporate Promotions
             </h1>
@@ -243,7 +243,10 @@ export default function Home() {
             className="pt-22 flex justify-center items-center space-x-6"
             data-aos="fade-up"
           >
-            <p className="text-[11px] text-white" data-aos="fade-right">
+            <p
+              className="text-[11px] text-white hover:text-blue-700"
+              data-aos="fade-right"
+            >
               FOLLOW US
             </p>
 
@@ -288,20 +291,48 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative md:w-1/2 h-full flex items-center justify-center p-8">
-          <Image
-            src="/images/hero-home.png"
-            alt="Hero Image"
-            width={800}
-            height={600}
-            className="object-cover rounded-lg shadow-lg"
-            data-aos="fade-right"
-          />
+        <div className="relative md:w-1/2 flex flex-col justify-center items-start p-8 text-white space-y-10">
+          <div className="w-full mt-12 mb-8">
+            <Image
+              src="/images/hero-home.png"
+              alt="Hero Image"
+              width={800}
+              height={600}
+              className="object-cover rounded-lg shadow-lg "
+              data-aos="fade-right"
+            />
+          </div>
+          <div
+            className="pt-22 flex justify-center items-center space-x-6"
+            data-aos="fade-up"
+          >
+            <p
+              className="text-[11px] text-white tracking-wide hover:text-blue-700"
+              data-aos="fade-right"
+            >
+              CONTACT
+            </p>
+
+            <div className="w-2 h-[1px] bg-white" data-aos="fade-right"></div>
+            <p
+              className="text-[11px] text-white tracking-wide hover:text-blue-700"
+              data-aos="fade-right"
+            >
+              +234-0903 810 4041
+            </p>
+            <div className="w-2 h-[1px] bg-white" data-aos="fade-right"></div>
+            <p
+              className="text-[11px] text-white tracking-wide hover:text-blue-700"
+              data-aos="fade-right"
+            >
+              INFO@3RAFIQUE_COMMUNICATION.COM
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="relative flex flex-col border pr-10 md:flex-row items-center justify-center h-screen">
-        <div className="relative md:w-1/3 flex flex-col justify-center h-screen items-start p-8 text-white space-y-6">
+        {/*<div className="relative md:w-1/3 flex flex-col justify-center h-screen items-start p-8 text-white space-y-6">
           <div className="absolute inset-0 bg-orange-400 opacity-90"></div>
           <div
             className="w-full bg-cover bg-center"
@@ -311,7 +342,7 @@ export default function Home() {
               Our Values
             </h1>
             <p
-              className="text-base font-normal py-16 mt-20 "
+              className="text-base font-normal py-16 "
               data-aos="fade-left"
             >
               We specialize in Public Relations, Advertising, Media Relations,
@@ -330,15 +361,17 @@ export default function Home() {
               <span className="mr-3">Learn More</span> <FaArrowRight className="text-white " />
             </button>
           </div>
-        </div>
-        {/* <div className="relative md:w-1/3 flex flex-col justify-center items-center h-screen p-8 text-white space-y-6">
+        </div> */}
+
+        <div className="relative md:w-1/3 flex flex-col justify-center items-center h-screen p-8 text-white space-y-6">
+          <div className="absolute inset-0 h-screen bg-orange-400 opacity-90"></div>
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center h-full"
             style={{ backgroundImage: "url('/images/opacity2Img.png')" }}
           ></div>
-          <div className="absolute inset-0 bg-orange-400 opacity-90"></div>
+          <div className="absolute inset-0 h-screen bg-orange-400 opacity-90"></div>
 
-          <div className="relative flex h-screen flex-col items-center text-center max-w-lg px-6">
+          <div className="relative flex flex-col items-center text-center max-w-lg px-6">
             <h1 className="text-4xl font-semibold" data-aos="fade-up">
               Our Values
             </h1>
@@ -358,12 +391,12 @@ export default function Home() {
               <FaArrowRight className="text-white" />
             </button>
           </div>
-        </div> */}
+        </div>
 
         <div className="relative md:w-2/3 h-full flex items-center justify-center p-8">
           <div className="flex flex-col items-center justify-center h-screen">
             <p
-              className="text-[20px] font-normal border-b-2 border-orange-400"
+              className="text-[20px] relative left-3 font-normal border-b-4 border-orange-400"
               data-aos="fade-up"
             >
               Welcom to

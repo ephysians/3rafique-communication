@@ -43,7 +43,7 @@ export default function Navbar() {
             <li key={path}>
               <Link
                 href={`/${path === "home" ? "" : path}`} // Routing logic for "home"
-                className="cursor-pointer hover:text-primary"
+                className="cursor-pointer hover:text-blue-700"
               >
                 {label}
               </Link>
