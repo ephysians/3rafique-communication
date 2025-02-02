@@ -1,191 +1,3 @@
-// "use client";
-// import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-
-// export default function Home() {
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000, // Animation duration in milliseconds
-//       once: true, // Animations run only once when scrolling
-//       easing: "ease-in-out",
-//     });
-//   }, []);
-
-//   return (
-//     <section className="flex flex-col items-center justify-center h-screen">
-//       <h1 className="text-4xl font-bold" data-aos="fade-up">
-//         Welcome to 3rafique Communication
-//       </h1>
-//       <p className="text-lg mt-4" data-aos="fade-right">
-//         We specialize in Production, Distribution & Promotion.
-//       </p>
-//     </section>
-//   );
-// }
-
-// "use client";
-// import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// import Image from "next/image";
-// import { useRouter } from "next/navigation";
-// import { FaArrowRight } from "react-icons/fa";
-// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-
-// export default function Home() {
-//   const router = useRouter();
-
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000, // Animation duration in milliseconds
-//       once: true, // Animations run only once when scrolling
-//       easing: "ease-in-out",
-//     });
-//   }, []);
-
-//   return (
-//     <>
-//       <section
-//         className="relative flex flex-col px-10 md:flex-row items-center justify-center h-screen bg-cover bg-center"
-//         style={{ backgroundImage: "url('/images/hero-home.png')" }}
-//       >
-//         <div className="absolute inset-0 bg-black opacity-80"></div>
-
-//         <div className="relative md:w-1/2 border flex flex-col justify-center items-start p-8 text-white space-y-6">
-//           <div className="w-full border ">
-//             <h1 className="text-6xl font-semibold" data-aos="fade-up">
-//               Elevating Brands with Strategic Marketing & Corporate Promotions
-//             </h1>
-//             <p className="text-lg py-16 " data-aos="fade-left">
-//               We specialize in Public Relations, Advertising, Media Relations,
-//               Logo Creation, Concept Generation, and IT Services. We also supply
-//               plaques and awards, along with corporate branding and promotional
-//               items.
-//             </p>
-//             <button
-//               onClick={() => router.push("/about")}
-//               className="bg-gap text-white px-8 py-3 rounded-md shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center space-x-2"
-//               data-aos="fade-up"
-//             >
-//               <span>Discover More</span> <FaArrowRight className="text-white" />
-//             </button>
-//           </div>
-//           <div className="pt-22 flex justify-center">
-//             <p className="text-lg">FOLLOW US</p>
-//             <div className="w-40 h-[1px] bg-gray-50" />
-//             <div className="flex justify-center space-x-6 mt-4">
-//               <a
-//                 href="https://facebook.com/3rafiquecommunication"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-white hover:bg-blue-700"
-//               >
-//                 <FaFacebook size={10} />
-//               </a>
-//               <a
-//                 href="https://twitter.com/3rafiquecommunication"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-white hover:bg-blue-700"
-//               >
-//                 <FaTwitter size={10} />
-//               </a>
-//               <a
-//                 href="https://instagram.com/3rafiquecommunication"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-white hover:bg-blue-700"
-//               >
-//                 <FaInstagram size={10} />
-//               </a>
-//               <a
-//                 href="https://linkedin.com/company/3rafiquecommunication"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-white hover:bg-blue-700"
-//               >
-//                 <FaLinkedin size={10} />
-//               </a>
-//             </div>
-//             <div></div>
-//           </div>
-//         </div>
-
-//         <div className="relative md:w-1/2 h-full flex items-center justify-center p-8">
-//           <Image
-//             src="/images/hero-home.png"
-//             alt="Hero Image"
-//             width={800}
-//             height={600}
-//             className="object-cover rounded-lg shadow-lg"
-//             data-aos="fade-right"
-//           />
-//         </div>
-//       </section>
-//       <section className="relative flex flex-col px-10 md:flex-row items-center justify-center h-screen bg-gap1">
-//         <div className="relative md:w-1/2 flex flex-col justify-center items-start p-8 text-white space-y-6">
-//           <div className="w-full">
-//             <h1 className="text-6xl font-semibold" data-aos="fade-up">
-//               Elevating Brands with Strategic Marketing & Corporate Promotions
-//             </h1>
-//             <p className="text-lg py-16 " data-aos="fade-left">
-//               We specialize in Public Relations, Advertising, Media Relations,
-//               Logo Creation, Concept Generation, and IT Services. We also supply
-//               plaques and awards, along with corporate branding and promotional
-//               items.
-//             </p>
-//             <button
-//               onClick={() => router.push("/about")}
-//               className="bg-gap text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center space-x-2"
-//               data-aos="fade-up"
-//             >
-//               <span>Discover More</span> <FaArrowRight className="text-white" />
-//             </button>
-//           </div>
-//         </div>
-
-//         <div className="relative md:w-1/2 h-full flex items-center justify-center p-8">
-//           <Image
-//             src="/images/hero-home.png"
-//             alt="Hero Image"
-//             width={800}
-//             height={600}
-//             className="object-cover rounded-lg shadow-lg"
-//             data-aos="fade-right"
-//           />
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
-
-// "use client";
-// import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-
-// export default function Home() {
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000, // Animation duration in milliseconds
-//       once: true, // Animations run only once when scrolling
-//       easing: "ease-in-out",
-//     });
-//   }, []);
-
-//   return (
-//     <section className="flex flex-col items-center justify-center h-screen">
-//       <h1 className="text-4xl font-bold" data-aos="fade-up">
-//         Welcome to 3rafique Communication
-//       </h1>
-//       <p className="text-lg mt-4" data-aos="fade-right">
-//         We specialize in Production, Distribution & Promotion.
-//       </p>
-//     </section>
-//   );
-// }
-
 "use client";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -205,8 +17,8 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Animations run only once when scrolling
+      duration: 1000,
+      once: false, 
       easing: "ease-in-out",
     });
   }, []);
@@ -320,7 +132,7 @@ export default function Home() {
             >
               +234-0903 810 4041
             </p>
-            <div className="w-2 h-[1px] bg-white" data-aos="fade-right"></div>
+            <div className="w-2 h-[1px] bg-white" data-aos="fade-right" />
             <p
               className="text-[11px] text-white tracking-wide hover:text-blue-700"
               data-aos="fade-right"
@@ -331,39 +143,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-col border pr-10 md:flex-row items-center justify-center h-screen">
-        {/*<div className="relative md:w-1/3 flex flex-col justify-center h-screen items-start p-8 text-white space-y-6">
-          <div className="absolute inset-0 bg-orange-400 opacity-90"></div>
-          <div
-            className="w-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/opacity2Img.png')" }}
-          >
-            <h1 className="text-4xl font-semibold" data-aos="fade-up">
-              Our Values
-            </h1>
-            <p
-              className="text-base font-normal py-16 "
-              data-aos="fade-left"
-            >
-              We specialize in Public Relations, Advertising, Media Relations,
-              Logo Creation, Concept Generation, and IT Services. We also supply
-              plaques and awards, along with corporate branding and promotional
-              items. We specialize in Public Relations, Advertising, Media
-              Relations, Logo Creation, Concept Generation, and IT Services. We
-              also supply plaques and awards, along with corporate branding and
-              promotional items.
-            </p>
-            <button
-              onClick={() => router.push("/about")}
-              className=" text-white transition-all flex items-center border-none justify-center"
-              data-aos="fade-up"
-            >
-              <span className="mr-3">Learn More</span> <FaArrowRight className="text-white " />
-            </button>
-          </div>
-        </div> */}
-
-        <div className="relative md:w-1/3 flex flex-col justify-center items-center h-screen p-8 text-white space-y-6">
+      <section className="relative flex flex-col md:flex-row items-start h-screen">
+        <div className="relative md:w-1/3 flex items-center justify-center h-screen p-8 text-white">
+          {/* Background Image & Overlay */}
           <div className="absolute inset-0 h-screen bg-orange-400 opacity-90"></div>
           <div
             className="absolute inset-0 bg-cover bg-center h-full"
@@ -371,6 +153,7 @@ export default function Home() {
           ></div>
           <div className="absolute inset-0 h-screen bg-orange-400 opacity-90"></div>
 
+          {/* Content - Centered Vertically & Horizontally */}
           <div className="relative flex flex-col items-center text-center max-w-lg px-6">
             <h1 className="text-4xl font-semibold" data-aos="fade-up">
               Our Values
@@ -393,19 +176,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative md:w-2/3 h-full flex items-center justify-center p-8">
-          <div className="flex flex-col items-center justify-center h-screen">
-            <p
-              className="text-[20px] relative left-3 font-normal border-b-4 border-orange-400"
-              data-aos="fade-up"
-            >
-              Welcom to
-            </p>
-            <h1 className="mb-6 text-4xl font-semibold text-orange-400">
+        <div className="relative md:w-2/3 flex flex-col h-full items-start justify-center pr-8 px-8">
+          <p
+            className="text-[20px] relative bottom-28 left-10 mb-4 font-normal border-b-4 border-orange-400 "
+            data-aos="fade-up"
+          >
+            Welcome to
+          </p>
+          <div className=" relative bottom-28 md:ml-28 md:max-w-[35rem] ">
+            <h1 className="mb-6 text-3xl font-semibold text-orange-400">
               3rafique Communication
             </h1>
 
-            <p className="text-lg mt-4" data-aos="fade-right">
+            <p className="text-[16px] font-normal mt-4" data-aos="fade-right">
               We specialize in Production, Distribution & Promotion. Lorem ipsum
               dolor sit amet consectetur adipisicing elit. Aperiam minus
               molestias voluptatum minima assumenda animi accusamus. Quia a
@@ -413,6 +196,7 @@ export default function Home() {
               veritatis, nihil laborum numquam.
             </p>
           </div>
+          <div className="mt-6 mb-6 w-full h-[1px] bg-gray-50" />
         </div>
       </section>
     </>
