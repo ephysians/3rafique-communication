@@ -5,12 +5,13 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const navArray = [
-    "home",
-    "who are we?",
-    "what we are doing?",
-    "affiliates",
-    "contact",
+    { path: "home", label: "Home" },
+    { path: "about", label: "Who are we?" },
+    { path: "services", label: "What are we doing?" },
+    { path: "affiliates", label: "Affiliates" },
+    { path: "contact", label: "Contact" },
   ];
 
   return (
@@ -38,13 +39,13 @@ export default function Navbar() {
             isOpen ? "block" : "hidden"
           } md:block space-x-6`}
         >
-          {navArray.map((page) => (
-            <li key={page}>
+          {navArray.map(({ path, label }) => (
+            <li key={path}>
               <Link
-                href={`/${page === "home" ? "" : page}`} // Routing logic for "home"
+                href={`/${path === "home" ? "" : path}`} // Routing logic for "home"
                 className="cursor-pointer hover:text-primary"
               >
-                {page.charAt(0).toUpperCase() + page.slice(1)}
+                {label}
               </Link>
             </li>
           ))}
