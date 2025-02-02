@@ -179,7 +179,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative md:w-2/3 md:mb-2 flex flex-col h-full items-start justify-center pr-8 px-8">
+        <div className="relative md:w-2/3 bg-white md:mb-2 flex flex-col h-full items-start justify-center pr-8 px-8">
           <p
             className="text-[20px] relative bottom-28 left-10 mb-4 font-normal border-b-4 border-orange-400 "
             data-aos="fade-up"
@@ -198,7 +198,7 @@ export default function Home() {
               sapiente dolor atque. Quibusdam possimus eligendi cumque excepturi
               veritatis, nihil laborum numquam.
             </p>
-            <div className="mt-3 mb-2 w-full h-[1px] bg-gray-50" />
+            <div className="mt-3 mb-2 w-full h-[1px] bg-gray-400" />
           </div>
         </div>
       </section>
